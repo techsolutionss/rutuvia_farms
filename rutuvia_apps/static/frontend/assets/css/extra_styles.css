@@ -1,0 +1,55 @@
+/*== Message Box Widget UI Page ==*/
+.ui_kit_message_box{
+	margin-bottom: 20px;
+}
+.ui_kit_message_box .alert{
+    border-radius: 4px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    height: auto;
+    padding: 20px;
+    position: relative;
+}
+.ui_kit_message_box .alert .btn-close{
+    background: transparent;
+    font-size: 18px;
+    position: absolute;
+    opacity: 1;
+    right: 10px;
+    top: 10px;
+	border: none;
+	cursor: pointer;
+}
+.ui_kit_message_box .alert .btn-close:focus{
+    box-shadow: none;
+}
+.alert.alert-info{
+    background-color: #CDE9F6;
+    color: #4780AA;
+}
+.alert.alert-info .btn-close{
+    color: #4780AA;
+}
+.alert.alert-warning{
+    background-color: #F7F3D7;
+    color: #927238;
+}
+.alert.alert-warning .btn-close{
+    color: #927238;
+}
+.alert.alert-error{
+    background-color: #ECC8C5;
+    color: #AB3331;
+}
+.alert.alert-error .btn-close{
+    color: #AB3331;
+}
+.alert.alert-success{
+    background-color: #DEF2D7;
+    color: #5B7052;
+}
+.alert.alert-success .btn-close{
+    color: #5B7052;
+}
