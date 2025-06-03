@@ -7,14 +7,28 @@
         <div class="container">
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{% url 'pages:index' %}">Home</a></li>
-                <li>/</li>
-                <li><span>Contact Us</span></li>
             </ul>
             <h2>Contact</h2>
         </div>
     </section>
     <section class="contact-one">
         <div class="container">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="notification {{message.tags}} fl-wrap">
+                        <p>{{ message }}</p>
+                        <a class="notification-close" href="#"><i class="far fa-times"></i></a>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            {% if form.errors %}
+                {% if form.non_field_errors %}
+                    <div class="notification error fl-wrap">
+                        <p>{{ form.non_field_errors }}</p>
+                        <a class="notification-close" href="#"><i class="far fa-times"></i></a>
+                    </div>
+                {% endif %}
+            {% endif %}
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
                     <div class="contact-one__content">
@@ -94,4 +108,12 @@
         </div><!-- /.container -->
     </section><!-- /.contact-infos -->
 
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        $(".notification-close").on("click", function (e) {
+            $(this).closest(".notification").slideUp(300)
+        });
+    </script>
 {% endblock %}

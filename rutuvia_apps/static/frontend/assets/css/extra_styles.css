@@ -1,55 +1,71 @@
-/*== Message Box Widget UI Page ==*/
-.ui_kit_message_box{
-	margin-bottom: 20px;
+.border-shadow{
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.ui_kit_message_box .alert{
-    border-radius: 4px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    height: auto;
-    padding: 20px;
+/* service item  */
+.service-item{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.service-item .thumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-item .thumb img{
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 1px solid red;
+}
+/*== Message Box Widget UI Page ==*/
+.notification {
+	padding:10px;
+	border-radius:4px;
+	margin-bottom:40px;
     position: relative;
 }
-.ui_kit_message_box .alert .btn-close{
-    background: transparent;
-    font-size: 18px;
-    position: absolute;
-    opacity: 1;
-    right: 10px;
-    top: 10px;
-	border: none;
-	cursor: pointer;
+.notification p {
+	color:#fff;
+	text-align:left;
+	padding-bottom:0;
 }
-.ui_kit_message_box .alert .btn-close:focus{
-    box-shadow: none;
+.notification p a {
+	color: rgba(255,255,255,0.71);
+	font-weight:600;
+	padding:0 5px;
 }
-.alert.alert-info{
-    background-color: #CDE9F6;
-    color: #4780AA;
+.notification-close {
+	position:absolute;
+	top:30%;
+	right:20px;
+	height:20px;
+	margin-top:-10px;
+	color: #ffffff;
 }
-.alert.alert-info .btn-close{
-    color: #4780AA;
+.notification-close:hover {
+	color:#fff;
 }
-.alert.alert-warning{
-    background-color: #F7F3D7;
-    color: #927238;
+.notification.success {
+	background: #5ECFB1;
 }
-.alert.alert-warning .btn-close{
-    color: #927238;
+.notification.warning {
+	background-color: #F7F3D7;
 }
-.alert.alert-error{
-    background-color: #ECC8C5;
-    color: #AB3331;
+.notification.warning .notification-close,
+.notification.warning p{
+	color: #927238;
 }
-.alert.alert-error .btn-close{
-    color: #AB3331;
+.notification.error {
+	background-color: #ECC8C5;
 }
-.alert.alert-success{
-    background-color: #DEF2D7;
-    color: #5B7052;
+.notification.error .notification-close,
+.notification.error p{
+	color: #AB3331;
 }
-.alert.alert-success .btn-close{
-    color: #5B7052;
+.notification.waitforreview{
+	background:#FBC54F;
 }

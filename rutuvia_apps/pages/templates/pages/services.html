@@ -1,0 +1,36 @@
+{% extends "frontend/base.html" %}
+{% load static i18n %}
+
+{% block content %}
+    <section class="page-header">
+        <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
+        <div class="container">
+            <ul class="thm-breadcrumb list-unstyled">
+                <li><a href="{% url 'pages:index' %}">Home</a></li>
+            </ul>
+            <h2>Services</h2>
+        </div>
+    </section>
+    <section class="service-area">
+        <div class="container">
+            {% if services %}
+                <div class="row">
+                    {% for service in services %}
+                        <div class="col-sm-6 col-lg-4 col-xl-3">
+                            <div class="service-item border-shadow">
+                                <div class="thumb">
+                                    <img src="{{ service.image.url }}" alt="{{ service.title }}">
+                                </div>
+                                <div class="service-title">
+                                    <h4 class="text-center">{{ service.title }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p>No services available at the moment.</p>
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}

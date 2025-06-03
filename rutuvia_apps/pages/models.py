@@ -15,3 +15,14 @@ class Contact(models.Model):
         verbose_name = "Contact"
         verbose_name_plural = "Contact"
         ordering = ["-created_at"]
+
+class Service(models.Model):
+    title = models.CharField(max_length=100)
+    image = models.ImageField(upload_to="services/")
+
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "Service"
+        verbose_name_plural = "Services"

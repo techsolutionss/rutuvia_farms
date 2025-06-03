@@ -1,5 +1,6 @@
 from django import forms
 from .models import Contact
+from django.forms import ValidationError
 
 class ContactForm(forms.Form):
     fullname = forms.CharField(
@@ -23,7 +24,7 @@ class ContactForm(forms.Form):
     )
     def clean(self):
         cleaned_data = super().clean()
-        # email = cleaned_data.get("email")
-        # if Contact.objects.filter(email=email).exists():
-        #     self.add_error("email", "email already exist")
+        email = cleaned_data.get("email")
+        if Contact.objects.filter(email=email).exists():
+            raise ValidationError("This email is already registered. Please use a different email.")
         return cleaned_data 
