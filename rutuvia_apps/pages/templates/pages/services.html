@@ -1,6 +1,5 @@
 {% extends "frontend/base.html" %}
 {% load static i18n %}
-
 {% block content %}
     <section class="page-header">
         <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
@@ -26,28 +25,24 @@
                                 </div>
                             </div>
                         </div>
-                        
                     {% endfor %}
                 </div>
-           {% else %}
-           <div class="card-body-1">
-
-            <div style="width: 310px; padding: 20px 10px; border: 1px solid #6e7673; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); align-items: center; background-color: #f3f2f0;">
-                <!-- Square with visible circle (added background color) -->
-                <div style="width: 280px; height: 160px; border: 1px solid #6e7673; border-radius: 3px; margin: 0 auto 20px; display: flex; justify-content: center; align-items: center; background-color: white;">
-                    <div style="width: 130px; height: 130px; border-radius: 50%; overflow: hidden; background-size: cover; background-position: center; background-color: #ddd; background-image: url(assets/img/image.png);"></div>
-                </div>
-                
-                <!-- Text container -->
-                <div style="width: 280px; margin: 0 auto; padding: 0; box-sizing: border-box;">
-                    <div style="font-weight: bold; margin-bottom: 18px; font-size: 1.1em; text-align: left; width: 100%;"><h2>General Contract</h2></div>
-                    <div style="color: #000; line-height: 1.5; text-align: left; width: 100%; word-wrap: break-word;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. 
+           {% else %}  
+           <div class="row-11">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="service-two__card">
+                    <div class="service-two__card-image">
+                        <img src="assets/images/services/service-2-1.jpg" alt="">
+                    </div>
+                    <div class="service-two__card-content">
+                        <div class="service-two__card-icon">
+                            <i class="agikon-icon-tractor"></i>
+                        </div>
+                        <h3><a href="service-details.html">Agriculture Products</a></h3>
+                        <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
                     </div>
                 </div>
-            </div>
-        </div>             
+            </div>           
         {% endif %}
         </div>
     </section>

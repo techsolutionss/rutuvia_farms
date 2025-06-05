@@ -5086,11 +5086,11 @@ h2 {
 }
 
 .contact-one__form .thm-btn {
-  background-color: var(--thm-primary);
+  background-color: #FFA500;
 }
 
 .contact-one__form .thm-btn:hover {
-  background-color: var(--thm-black);
+  background-color: #228B22;
   color: #fff;
 }
 
@@ -6111,7 +6111,7 @@ h2 {
 }
 
 .call-to-action__three {
-  background-color: #49a760;
+  background-color: rgb(16, 92, 35);
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -6639,7 +6639,7 @@ h2 {
   font-size: 35px;
   color: #fff;
   border-radius: 50%;
-  position: relative;
+  /* position: relative; */
   top: -39px;
   margin-bottom: -39px;
   -webkit-transition: all 500ms ease;
