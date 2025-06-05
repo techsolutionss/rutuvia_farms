@@ -3,4 +3,135 @@
 
 {% block content %}
 
+<div class="stricky-header stricked-menu main-menu">
+    <div class="sticky-header__content"></div>
+</div>
+<section class="page-header">
+    <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
+    
+    <div class="container">
+        <ul class="thm-breadcrumb list-unstyled">
+            <li><a href="index-2.html">Home</a></li>
+            <li>/</li>
+            <li><span>About</span></li>
+        </ul>
+        <h2>About Us</h2>
+    </div>
+</section>
+   <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; padding: 20px; font-family: Arial, sans-serif;">
+    <!-- Mission Card -->
+    <div style="width: 575px; border: 1px solid #e0e0e0; border-radius: 12px; padding: 75px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: white;">
+        <h2 style="font-size: 22px; color: #2a5c3d; margin-top: 0; margin-bottom: 15px; text-align: center;">Our Mission</h2>
+        <p style="line-height: 1.6; color: #555; margin: 0;">
+            Our mission is to contribute to the promotion of agricultural products in Vietnam with a commitment to produce sustainable values that meet international standards and thereby create a fair and competitive market.
+        </p>
+    </div>
+    
+    <!-- Vision Card -->
+    <div style="width: 575px; height: 40vh; border: 1px solid #e0e0e0; border-radius: 12px; padding: 75px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: white;">
+        <h2 style="font-size: 22px; color: #2a5c3d; margin-top: 0; margin-bottom: 15px; text-align: center;">Our Vision</h2>
+        <p style="line-height: 1.6; color: #555; margin: 0;">
+            Our vision is to become Vietnam's leading agricultural promoter, recognized globally for our sustainable practices and our role in establishing equitable trade standards for local farmers.
+        </p>
+    </div>
+</div>
+
+</section>
+<div class="card-style-paragraph">
+        <h2>Your Heading Text Here</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit sunt tenetur nulla reiciendis, ab, 
+        neque quas earum cumque <br>
+        quis eveniet minima ea delectus, ut cum dolore? Provident, perferendis reprehenderit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit sunt tenetur nulla reiciendis, ab, 
+        neque quas earum cumque <br>
+        quis eveniet minima ea delectus, ut cum dolore? Provident, perferendis reprehenderit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit sunt tenetur nulla reiciendis, ab, 
+        neque quas earum cumque <br>
+        quis eveniet minima ea delectus, ut cum dolore? Provident, perferendis reprehenderit?
+    </p>
+</div>
+ <div class="container py-5">
+        <div class="row g-4">
+           
+            <div class="col-md-4">
+                <div class="feature-card shadow-sm">
+                    <h3 class="feature-title">100% Organic Products</h3>
+                    <p class="feature-text">Ultrices sagittis orci a scelerisque purus semper eget duis at. Sollicitudin nibh sit amet commodo nulla.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card shadow-sm">
+                    <h3 class="feature-title">Absolute Quality</h3>
+                    <p class="feature-text">Ultrices sagittis orci a scelerisque purus semper eget duis at. Sollicitudin nibh sit amet commodo nulla.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="feature-card shadow-sm">
+                    <h3 class="feature-title">Environmentally Friendly</h3>
+                    <p class="feature-text">Ultrices sagittis orci a scelerisque purus semper eget duis at. Sollicitudin nibh sit amet commodo nulla.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="go-green-section">
+        <div class="container">
+            <div class="go-green-grid">
+                <!-- Image Column -->
+                <div class="go-green-image">
+                    <img src="{% static 'assets/images/green-farm.jpg' %}" alt="Go Green Initiative">
+                </div>
+                
+                <!-- Content Column -->
+                <div class="go-green-content">
+                    <h2 class="section-title">Let us resolve to go green</h2>
+                    <h3 class="section-subtitle">Resources for Farming</h3>
+                    <p class="section-intro">Go green, go natural....we love to help you!</p>
+                    <p class="section-text">
+                        Motbi tempor sit amet enim sit amet dictum. Curabitur
+                        vehicula quam elit, in congue turpis vehicula non. In tempor
+                        lorem magna, sit amet scelerisque nisi vehicula a. Ut quis
+                        aliquam neque.Pellentesque bibendum pretium felis, et
+                        placerat tortor.
+                    </p>
+                    
+                    <div class="feature-items">
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Let us protect the environment</h4>
+                                <p>Preserve it the way it was</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-recycle"></i>
+                            <div>
+                                <h4>Go green, use biodegradables</h4>
+                                <p>No chemicals, No fumes!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>We owe it to the world</h4>
+                                <p>Fresh air, fresh water</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        
+    </style>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 {% endblock %}
