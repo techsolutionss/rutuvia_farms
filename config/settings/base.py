@@ -1,5 +1,5 @@
 
-from .base import * # noqa: F401,F403
+from .base import *
 from pathlib import Path
 import os, environ
 
@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # root directory of your project
 ROOT_DIR = (
-    environ.Path(__file__) - 3
+  environ.Path(__file__) - 3
 )  
 APPS_DIR = ROOT_DIR.path("rutuvia_apps")
 env = environ.Env()
@@ -33,7 +33,7 @@ THIRD_PARTY_APPS = []
 LOCAL_APPS = [
     "rutuvia_apps.pages.apps.PagesConfig",
     "rutuvia_apps.account.apps.AccountConfig",
-    "rutuvia_apps.product.apps.ProductConfig",
+    "rutuvia_apps.product.apps.ProductConfig"
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
@@ -78,16 +78,16 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
- #   'default': {
- #       'ENGINE': 'django.db.backends.mysql',
-  #      'NAME': env('DATABASE_NAME'),
-   #     'USER': env('DATABASE_USER'),
-    #    'PASSWORD': env('DATABASE_PASSWORD'),
-     #   'HOST': env('DATABASE_HOST', default='localhost'),
-      #  'PORT': '3306'
- #   }
-#}
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': env('DATABASE_NAME'),
+#        'USER': env('DATABASE_USER'),
+#        'PASSWORD': env('DATABASE_PASSWORD'),
+#        'HOST': env('DATABASE_HOST', default='localhost'),
+#        'PORT': '3306'
+#    }
+# }
 
 DATABASES = {
     'default': {
