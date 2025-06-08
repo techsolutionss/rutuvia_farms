@@ -2,7 +2,7 @@
 {% load static i18n %}
 {% block content %}
     <section class="page-header">
-        <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.jpg);"></div>
+        <div class="page-header__bg" style="background-image: url({% static 'frontend/assets/images/backgrounds/page-header-bg-1-1.jpg' %});"></div>
         <div class="container">
             <ul class="thm-breadcrumb list-unstyled">
                 <li><a href="{% url 'pages:index' %}">Home</a></li>
@@ -32,11 +32,11 @@
             <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="service-two__card">
                     <div class="service-two__card-image">
-                        <img src="assets/images/services/service-2-1.jpg" alt="">
+                        <img src="{% static 'frontend/assets/images/services/service-2-1.jpg' %}" alt="">
                     </div>
                     <div class="service-two__card-content">
                         <div class="service-two__card-icon" 
-                             style="background-image: url('frontend/assets/images/services/service-icon-1-1.png'); ');
+                             style="background-image: url({% static 'frontend/assets/images/services/service-icon-1-1.png' %}); ');
                                     background-size: cover;
                                     background-position: center;
                                     width: 150px;
