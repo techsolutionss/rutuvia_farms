@@ -15,40 +15,27 @@
             {% if services %}
                 <div class="row">
                     {% for service in services %}
-                        <div class="col-sm-6 col-lg-4 col-xl-3">
-                            <div class="service-item border-shadow">
-                                <div class="thumb">
-                                    <img src="{{ service.image.url }}" alt="{{ service.title }}">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="service-two__card">
+                                <div class="service-two__card-image">
+                                    <img src="{% static 'frontend/assets/images/services/service-2-1.jpg' %}" alt="">
                                 </div>
-                                <div class="service-title">
-                                    <h4 class="text-center">{{ service.title }}</h4>
+                                <div class="service-two__card-content">
+                                    <div class="service-two__card-icon">
+                                        <i class=""></i>
+                                    </div>
+                                    <h3><a href="service-details.html">Agriculture Products</a></h3>
+                                    <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div>                  
                     {% endfor %}
                 </div>
            {% else %}  
-           <div class="row-11">
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="service-two__card">
-                    <div class="service-two__card-image">
-                        <img src="{% static 'frontend/assets/images/services/service-2-1.jpg' %}" alt="">
-                    </div>
-                    <div class="service-two__card-content">
-                        <div class="service-two__card-icon" 
-                             style="background-image: url({% static 'frontend/assets/images/services/service-icon-1-1.png' %}); ');
-                                    background-size: cover;
-                                    background-position: center;
-                                    width: 150px;
-                                    height: 150px;
-                                    border-radius: 50%;">
-                        </div>
-                        
-                        <h3><a href="service-details.html">Agriculture Products</a></h3>
-                        <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
-                    </div>
-            </div>           
-        {% endif %}
+                <div class="alert alert-info text-center">
+                    <p>No services available at the moment.</p>
+                </div>
+            {% endif %}
         </div>
     </section>
 {% endblock %}
