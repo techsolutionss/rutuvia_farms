@@ -1,20 +1,11 @@
-{% load static i18n %}
-
 {% extends "frontend/base.html" %}
-
+{% load static i18n %}
 
 <!-- JUST MADE CHANGES TO THIS FILE BY 7:37PM -->
 
 {% block content %}
-
-    <div class="page-wrapper">
-
-        <div class="stricky-header stricked-menu main-menu">
-            <div class="sticky-header__content">
-        </div>
-
-        <section class="main-slider">
-            <div class="swiper-container thm-swiper__slider" data-swiper-options='{
+<section class="main-slider">
+    <div class="swiper-container thm-swiper__slider" data-swiper-options='{
         "slidesPerView": 1,
         "loop": true,
         "effect": "fade",
@@ -25,554 +16,432 @@
             "nextEl": "#main-slider__swiper-button-next",
             "prevEl": "#main-slider__swiper-button-prev"
         }
-    }'>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url({% static 'frontend/assets/images/main-slider/main-slider-1-1.jpg' %});">
+        }'>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-layer" style="background-image: url(../../../static/frontend/assets/images/main-slider-1-2.jpg);">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7">
+                            <span class="tagline">Welcome to Agriculture Farm</span>
+                            <h2><span>Agriculture</span> <br>
+                                & Eco Farming</h2>
+                            <p>There are many of passages of lorem Ipsum, but the majori have <br> suffered alteration
+                                in some form.</p>
+                            <a href="#" class=" thm-btn">Discover More</a>
                         </div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-7 col-lg-7">
-                                    <span class="tagline">Welcome to Agriculture Farm</span>
-                                    <h2><span>Agriculture</span> <br>
-                                        & Eco Farming</h2>
-                                    <p>There are many of passages of lorem Ipsum, but the majori have <br> suffered alteration
-                                        in some form.</p>
-                                    <a href="#" class=" thm-btn">Discover More</a>
-                                    <!-- /.thm-btn dynamic-radius -->
-                                </div><!-- /.col-lg-7 text-right -->
-                            </div><!-- /.row -->
-                        </div><!-- /.container -->
-                    </div><!-- /.swiper-slide -->
-                    <div class="swiper-slide">
-                        <div class="image-layer" style="background-image: url({% static 'frontend/assets/images/main-slider/main-slider-1-1.jpg' %});">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-7 col-lg-7">
-                                    <span class="tagline">Welcome to Agriculture Farm</span>
-                                    <h2><span>Agriculture</span><br>
-                                        & Eco Farming</h2>
-                                    <p>There are many of passages of lorem Ipsum, but the majori have <br> suffered alteration
-                                        in some form.</p>
-                                    <a href="#" class=" thm-btn">Discover More</a>
-                                    <!-- /.thm-btn dynamic-radius -->
-                                </div><!-- /.col-lg-7 text-right -->
-                            </div><!-- /.row -->
-                        </div><!-- /.container -->
-                    </div><!-- /.swiper-slide -->
-                </div><!-- /.swiper-wrapper -->
-
-                <!-- If we need navigation buttons -->
-                <div class="main-slider__nav">
-                    <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i class="agrikon-icon-left-arrow"></i>
                     </div>
-                    <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i class="agrikon-icon-right-arrow"></i></div>
-                </div><!-- /.main-slider__nav -->
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-layer" style="background-image: url(../../../static/frontend/assets/images/main-slider/main-slider-2-1.jpg);">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-7">
+                            <span class="tagline">Welcome to Agriculture Farm</span>
+                            <h2><span>Agriculture</span><br>
+                                & Eco Farming</h2>
+                            <p>There are many of passages of lorem Ipsum, but the majori have <br> suffered alteration
+                                in some form.</p>
+                            <a href="#" class=" thm-btn">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            </div><!-- /.swiper-container thm-swiper__slider -->
-        </section><!-- /.main-slider -->
+        <!-- If we need navigation buttons -->
+        <div class="main-slider__nav">
+            <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i class="agrikon-icon-left-arrow"></i>
+            </div>
+            <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i class="agrikon-icon-right-arrow"></i></div>
+        </div>
+    </div>
+</section>
 
-        <section class="service-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="service-one__box">
-                            <img src="{% static 'frontend/assets/images/services/service-1-1.jpg' %}" alt="">
-                            <div class="service-one__box-content">
-                                <h3><a href="service-details.html">Agriculture Leader</a></h3>
-                            </div><!-- /.service-one__box-content -->
-                        </div><!-- /.service-one__box -->
-                    </div><!-- /.col-md-12 col-lg-4 -->
-                    <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="service-one__box">
-                            <img src="{% static 'frontend/assets/images/services/service-1-2.jpg' %}" alt="">
-                            <div class="service-one__box-content">
-                                <h3><a href="service-details.html">Quality Standards</a></h3>
-                            </div><!-- /.service-one__box-content -->
-                        </div><!-- /.service-one__box -->
-                    </div><!-- /.col-md-12 col-lg-4 -->
-                    <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="service-one__box">
-                            <img src="{% static 'frontend/assets/images/services/service-1-3.jpg' %}" alt="">
-                            <div class="service-one__box-content">
-                                <h3><a href="service-details.html">Organic Services</a></h3>
-                            </div><!-- /.service-one__box-content -->
-                        </div><!-- /.service-one__box -->
-                    </div><!-- /.col-md-12 col-lg-4 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.service-one -->
+<section class="service-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
+                <div class="service-one__box">
+                    <img src="{% static 'frontend/assets/images/services/service-1-1.jpg' %}" alt="">
+                    <div class="service-one__box-content">
+                        <h3><a href="service-details.html">Agriculture Leader</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
+                <div class="service-one__box">
+                    <img src="{% static 'frontend/assets/images/services/service-1-2.jpg' %}" alt="">
+                    <div class="service-one__box-content">
+                        <h3><a href="service-details.html">Quality Standards</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
+                <div class="service-one__box">
+                    <img src="{% static 'frontend/assets/images/services/service-1-3.jpg' %}" alt="">
+                    <div class="service-one__box-content">
+                        <h3><a href="service-details.html">Organic Services</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section class="about-one">
-            <img src="{% static 'frontend/assets/images/icons/about-bg-icon-1-1.png' %}" class="about-one__bg-shape-1" alt="">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="about-one__images">
-                            <img src="{% static 'frontend/assets/images/resources/about-2-2.jpg' %}" alt="">
-                            <img src="{% static 'frontend/assets/images/resources/about-1-2.jpg' %}" alt="">
-                            <div class="about-one__count wow fadeInLeft" data-wow-duration="1500ms">
-                                <span>Trusted by</span>
-                                <h4>8900</h4>
-                            </div><!-- /.about-one__count -->
-                        </div><!-- /.about-one__images -->
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-lg-7">
-                        <div class="about-one__content">
-                            <div class="block-title text-left">
-                                <div class="block-title__image"></div><!-- /.block-title__image -->
-                                <p>Welcome to agricon</p>
-                                <h3>Better Agriculture for
-                                    Better Future</h3>
-                            </div><!-- /.block-title -->
-                            <div class="about-one__tagline">
-                                <p>We have 30 years of agriculture & eco farming experience globaly</p>
-                            </div><!-- /.about-one__tagline -->
-                            <div class="about-one__summery">
-                                <p>There are many variations of passages of lorem ipsum available but the majority have suffered
-                                    alteration in some form by injected humor or random word which don't look even.</p>
-                            </div><!-- /.about-one__summery -->
-                            <div class="about-one__icon-row">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="about-one__box">
-                                            <i class="fas fa-tractor"></i>
-                                            <h4><a href="about.html">Professional
-                                                    Farmers</a></h4>
-                                        </div><!-- /.about-one__box -->
-                                    </div><!-- /.col-lg-6 -->
-                                    <div class="col-lg-6">
-                                        <div class="about-one__box">
-                                            <i class="fas fa-wheat"></i>                                             
-                                            <h4><a href="services.html">Agric & Eco
-                                                    Solutions</a></h4>
-                                        </div><!-- /.about-one__box -->
-                                    </div><!-- /.col-lg-6 -->
-                                </div><!-- /.row -->
-                            </div><!-- /.about-one__icon-row -->
-                            <a href="about.html" class="thm-btn">Discover More</a><!-- /.thm-btn -->
-                        </div><!-- /.about-one__content -->
-                    </div><!-- /.col-lg-6 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.about-one -->
+<section class="about-one">
+    <img src="{% static 'frontend/assets/images/icons/about-bg-icon-1-1.png' %}" class="about-one__bg-shape-1" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="about-one__images">
+                    <img src="{% static 'frontend/assets/images/resources/about-2-2.jpg' %}" alt="">
+                    <img src="{% static 'frontend/assets/images/resources/about-1-2.jpg' %}" alt="">
+                    <div class="about-one__count wow fadeInLeft" data-wow-duration="1500ms">
+                        <span>Trusted by</span>
+                        <h4>8900</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="about-one__content">
+                    <div class="block-title text-left">
+                        <div class="block-title__image"></div>
+                        <p>Welcome to agricon</p>
+                        <h3>Better Agriculture for
+                            Better Future</h3>
+                    </div>
+                    <div class="about-one__tagline">
+                        <p>We have 30 years of agriculture & eco farming experience globaly</p>
+                    </div>
+                    <div class="about-one__summery">
+                        <p>There are many variations of passages of lorem ipsum available but the majority have suffered
+                            alteration in some form by injected humor or random word which don't look even.</p>
+                    </div>
+                    <div class="about-one__icon-row">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="about-one__box">
+                                    <i class="fas fa-tractor"></i>
+                                    <h4><a href="about.html">Professional
+                                            Farmers</a></h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="about-one__box">
+                                    <i class="fas fa-wheat"></i>                                             
+                                    <h4><a href="services.html">Agric & Eco
+                                            Solutions</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="thm-btn">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section class="service-two">
-            <div class="service-two__bottom-curv"></div><!-- /.service-two__bottom-curv -->
-            <div class="container">
-                <div class="block-title text-center">
-                    <div class="block-title__image"></div><!-- /.block-title__image -->
-                    <p>Our Services list</p>
-                    <h3>What We’re Offering</h3>
-                </div><!-- /.block-title -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="service-two__card">
-                            <div class="service-two__card-image">
-                                <img src="{% static 'frontend/assets/images/services/service-2-1.jpg' %}" alt="">
-                            </div><!-- /.service-two__card-image -->
-                            <div class="service-two__card-content">
-                                <div class="service-two__card-icon">
-                                    <i class=""></i>
-                                </div><!-- /.service-two__card-icon -->
-                                <h3><a href="service-details.html">Agriculture Products</a></h3>
-                                <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
-                            </div><!-- /.service-two__card-content -->
-                        </div><!-- /.service-two__card -->
-                    </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="service-two__card">
-                            <div class="service-two__card-image">
-                                <img src="{% static 'frontend/assets/images/services/service-2-2.jpg' %}" alt="">
-                            </div><!-- /.service-two__card-image -->
-                            <div class="service-two__card-content">
-                                <div class="service-two__card-icon">
-                                    <i class="agrikon-icon-organic-food"></i>
-                                </div><!-- /.service-two__card-icon -->
-                                <h3><a href="service-details.html">Oragnic
-                                        Products</a></h3>
-                                <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
-                            </div><!-- /.service-two__card-content -->
-                        </div><!-- /.service-two__card -->
-                    </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="service-two__card">
-                            <div class="service-two__card-image">
-                                <img src="{% static 'frontend/assets/images/services/service-2-3.jpg' %}" alt="">
-                            </div><!-- /.service-two__card-image -->
-                            <div class="service-two__card-content">
-                                <div class="service-two__card-icon">
-                                    <i class="agrikon-icon-vegetable"></i>
-                                </div><!-- /.service-two__card-icon -->
-                                <h3><a href="service-details.html">Fresh
-                                        Vegetables</a></h3>
-                                <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
-                            </div><!-- /.service-two__card-content -->
-                        </div><!-- /.service-two__card -->
-                    </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
-                    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="service-two__card">
-                            <div class="service-two__card-image">
-                                <img src="{% static 'frontend/assets/images/services/service-2-4.jpg' %}" alt="">
-                            </div><!-- /.service-two__card-image -->
-                            <div class="service-two__card-content">
-                                <div class="service-two__card-icon">
-                                    <i class="agrikon-icon-dairy"></i>
-                                </div><!-- /.service-two__card-icon -->
-                                <h3><a href="service-details.html">Dairy
-                                        Products</a></h3>
-                                <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
-                            </div><!-- /.service-two__card-content -->
-                        </div><!-- /.service-two__card -->
-                    </div><!-- /.col-sm-12 col-md-6 col-lg-3 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.service-two -->
+<section class="service-two">
+    <div class="service-two__bottom-curv"></div>
+    <div class="container">
+        <div class="block-title text-center">
+            <div class="block-title__image"></div>
+            <p>Our Services list</p>
+            <h3>What We’re Offering</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="service-two__card">
+                    <div class="service-two__card-image">
+                        <img src="{% static 'frontend/assets/images/services/service-2-1.jpg' %}" alt="">
+                    </div>
+                    <div class="service-two__card-content">
+                        <div class="service-two__card-icon">
+                            <i class=""></i>
+                        </div>
+                        <h3><a href="service-details.html">Agriculture Products</a></h3>
+                        <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="service-two__card">
+                    <div class="service-two__card-image">
+                        <img src="{% static 'frontend/assets/images/services/service-2-2.jpg' %}" alt="">
+                    </div>
+                    <div class="service-two__card-content">
+                        <div class="service-two__card-icon">
+                            <i class="agrikon-icon-organic-food"></i>
+                        </div>
+                        <h3><a href="service-details.html">Oragnic
+                                Products</a></h3>
+                        <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="service-two__card">
+                    <div class="service-two__card-image">
+                        <img src="{% static 'frontend/assets/images/services/service-2-3.jpg' %}" alt="">
+                    </div>
+                    <div class="service-two__card-content">
+                        <div class="service-two__card-icon">
+                            <i class="agrikon-icon-vegetable"></i>
+                        </div>
+                        <h3><a href="service-details.html">Fresh
+                                Vegetables</a></h3>
+                        <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="service-two__card">
+                    <div class="service-two__card-image">
+                        <img src="{% static 'frontend/assets/images/services/service-2-4.jpg' %}" alt="">
+                    </div>
+                    <div class="service-two__card-content">
+                        <div class="service-two__card-icon">
+                            <i class="agrikon-icon-dairy"></i>
+                        </div>
+                        <h3><a href="service-details.html">Dairy
+                                Products</a></h3>
+                        <p>Lorem ium dolor sit ametad pisicing elit sed simply do ut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <div class="projects-one project-one__home-one">
-            <div class="container">
-                <div class="block-title text-center">
-                    <div class="block-title__image"></div><!-- /.block-title__image -->
-                    <p>Closed projects</p>
-                    <h3>Latest Projects List</h3>
-                </div><!-- /.block-title -->
-                <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 0, "slidesPerView": 1, "loop": true, "slidesPerGroup": 1, "pagination": {
+<div class="projects-one project-one__home-one">
+    <div class="container">
+        <div class="block-title text-center">
+            <div class="block-title__image"></div>
+            <p>Closed projects</p>
+            <h3>Latest Projects List</h3>
+        </div>
+        <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 0, "slidesPerView": 1, "loop": true, "slidesPerGroup": 1, "pagination": {
             "el": "#projects-one__swiper-pagination",
             "type": "bullets",
             "clickable": true
-        },
-        "breakpoints": {
-            "0": {
-                "spaceBetween": 0,
-                "slidesPerView": 1,
-                "slidesPerGroup": 1
             },
-            "640": {
-                "spaceBetween": 30,
-                "slidesPerView": 2,
-                "slidesPerGroup": 2
-            },
-            "992": {
-                "spaceBetween": 30,
-                "slidesPerView": 2,
-                "slidesPerGroup": 2
-            }
-        }}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="projects-one__single">
-                                <img src="{% static 'frontend/assets/images/projects/project-2-2.jpg' %}" alt="">
-                                <div class="projects-one__content">
-                                    <h3>Harvest Innovation</h3>
-                                    <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
-                                </div><!-- /.projects-one__content -->
-                            </div><!-- /.projects-one__single -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="projects-one__single">
-                                <img src="{% static 'frontend/assets/images/projects/project-2-2.jpg' %}" alt="">
-                                <div class="projects-one__content">
-                                    <h3>Harvest Innovation</h3>
-                                    <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
-                                </div><!-- /.projects-one__content -->
-                            </div><!-- /.projects-one__single -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="projects-one__single">
-                                <img src="{% static 'frontend/assets/images/projects/project-2-3.jpg' %}" alt="">
-                                <div class="projects-one__content">
-                                    <h3>Harvest Innovation</h3>
-                                    <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
-                                </div><!-- /.projects-one__content -->
-                            </div><!-- /.projects-one__single -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="projects-one__single">
-                                <img src="{% static 'frontend/assets/images/projects/project-2-4.jpg' %}" alt="">
-                                <div class="projects-one__content">
-                                    <h3>Harvest Innovation</h3>
-                                    <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
-                                </div><!-- /.projects-one__content -->
-                            </div><!-- /.projects-one__single -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="projects-one__single">
-                                <img src="{% static 'frontend/assets/images/projects/project-2-2.jpg' %}" alt="">
-                                <div class="projects-one__content">
-                                    <h3>Harvest Innovation</h3>
-                                    <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
-                                </div><!-- /.projects-one__content -->
-                            </div><!-- /.projects-one__single -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="projects-one__single">
-                                <img src="{% static 'frontend/assets/images/projects/project-2-4.jpg' %}" alt="">
-                                <div class="projects-one__content">
-                                    <h3>Harvest Innovation</h3>
-                                    <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
-                                </div><!-- /.projects-one__content -->
-                            </div><!-- /.projects-one__single -->
-                        </div><!-- /.swiper-slide -->
-                    </div><!-- /.swiper-wrapper -->
-                    <div class="swiper-pagination" id="projects-one__swiper-pagination"></div>
-                </div><!-- /.swiper-container -->
-            </div><!-- /.container -->
-        </div><!-- /.projects-one -->
-
-        <section class="call-to-action__three jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 50%">
-            <img class="call-to-action__three__bg jarallax-img" src="{% static 'frontend/assets/images/backgrounds/cta-1-bg-1.jpg' %}" alt="parallax-image" />
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 wow fadeInLeft" data-wow-duration="1500ms">
-                        <div class="call-to-action__three-image">
-                            <img src="{% static 'frontend/assets/images/resources/cta-3-1.jpg' %}" alt="">
-                            <img src="{% static 'frontend/assets/images/resources/cta-3-2.jpg' %}" alt="">
-                        </div><!-- /.call-to-action__three-image -->
-                    </div><!-- /.col-lg-5 -->
-                    <div class="col-lg-7">
-                        <div class="call-to-action__three-content">
-                            <h3>Providing High Quality
-                                Products</h3>
-                            <a href="about.html" class="thm-btn">Discover More</a><!-- /.thm-btn -->
-                        </div><!-- /.call-to-action__three-content -->
-                    </div><!-- /.col-lg-7 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.call-to-action__three -->
-
-        <section class="testimonials-one">
-            <img src="{% static 'frontend/assets/images/icons/testimonials-bg-1-1.png' %}" class="testimonials-one__bg" alt="">
-            <div class="container">
-                <h2 class="testimonials-one__title">Testimonials</h2>
-                <div id="testimonials-one__carousel" class="testimonials-one__carousel swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__icons">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div><!-- /.testimonials-one__icons -->
-                            <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
-                                refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
-                                reprehenderit in esse nulla pariatur.</p>
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__icons">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div><!-- /.testimonials-one__icons -->
-                            <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
-                                refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
-                                reprehenderit in esse nulla pariatur.</p>
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__icons">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div><!-- /.testimonials-one__icons -->
-                            <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
-                                refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
-                                reprehenderit in esse nulla pariatur.</p>
-                        </div><!-- /.swiper-slide -->
-                    </div><!-- /.swiper-wrapper -->
-                </div><!-- /#testimonials-one__carousel -->
-
-                <div id="testimonials-one__thumb" class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__image">
-                                <img src="{% static 'frontend/assets/images/resources/testimonials-1-1.jpg' %}" alt="">
-                            </div><!-- /.testimonials-one__image -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__image">
-                                <img src="{% static 'frontend/assets/images/resources/testimonials-1-2.jpg' %}" alt="">
-                            </div><!-- /.testimonials-one__image -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__image">
-                                <img src="{% static 'frontend/assets/images/resources/testimonials-1-3.jpg' %}" alt="">
-                            </div><!-- /.testimonials-one__image -->
-                        </div><!-- /.swiper-slide -->
-                    </div><!-- /.swiper-wrapper -->
-                </div><!-- /#testimonials-one__thumb.swiper-container -->
-
-                <div id="testimonials-one__meta" class="testimonials-one__carousel swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__meta">
-                                <h4>Jessica Brown</h4>
-                                <span>Customer</span>
-                            </div><!-- /.testimonials-one__meta -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__meta">
-                                <h4>Caleb Hoffman</h4>
-                                <span>Customer</span>
-                            </div><!-- /.testimonials-one__meta -->
-                        </div><!-- /.swiper-slide -->
-                        <div class="swiper-slide">
-                            <div class="testimonials-one__meta">
-                                <h4>Bradley Kim</h4>
-                                <span>Customer</span>
-                            </div><!-- /.testimonials-one__meta -->
-                        </div><!-- /.swiper-slide -->
-                    </div><!-- /.swiper-wrapper -->
-                </div><!-- /#testimonials-one__meta.swiper-container -->
-                <div class="swiper-pagination" id="testimonials-one__swiper-pagination"></div>
-            </div><!-- /.container -->
-        </section><!-- /.testimonials-one -->
-
-              
-                </div><!-- /.container -->
-            </div><!-- /.blog-home-two -->
-            <div class="blog-home__slogan">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <div class="blog-home__slogan-main">
-                                <i class="agrikon-icon-farm"></i>
-                                <div class="blog-home__slogan-content">
-                                    <h3>We Care About Our Agriculture Growth</h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                        suffered in some form, by injected humour words.</p>
-                                </div><!-- /.blog-home__slogan-content -->
-                            </div><!-- /.blog-home__slogan-main -->
-                        </div><!-- /.col-lg-9 -->
-                        <div class="col-lg-3">
-                            <div class="blog-home__slogan-image">
-                                <img src="{% static 'frontend/assets/images/resources/blog-cta-1.png' %}" alt="">
-                            </div><!-- /.blog-home__slogan-image -->
-                        </div><!-- /.col-lg-3 -->
-                    </div><!-- /.row -->
-                </div><!-- /.container -->
-            </div><!-- /.blog-home__slogan -->
-        </section><!-- /.gray-boxed-wrapper -->
-
-        <section class="contact-two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
-                        <div class="contact-two__image">
-                            <div class="contact-two__image-bubble-1"></div><!-- /.contact-two__image-bubble-1 -->
-                            <div class="contact-two__image-bubble-2"></div><!-- /.contact-two__image-bubble-2 -->
-                            <div class="contact-two__image-bubble-3"></div><!-- /.contact-two__image-bubble-3 -->
-                            <img src="{% static 'frontend/assets/images/resources/contact-1-1.jpg' %}" class="img-fluid" alt="">
-                        </div><!-- /.contact-two__image -->
-                    </div><!-- /.col-sm-12 col-md-12 col-lg-12 col-xl-5 -->
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3">
-                        <div class="contact-two__content">
-                            <div class="block-title">
-                                <div class="block-title__image"></div><!-- /.block-title__image -->
-                                <p>Contact now</p>
-                                <h3>Leave Us A
-                                    Message</h3>
-                            </div><!-- /.block-title -->
-                            <div class="contact-two__summery">
-                                <p>Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor
-                                    incididunt
-                                    ut labore et dolore magna aliqua lonm andhn. Aenean tincidunt id mauris id auctor. Donec at
-                                    ligula lacus dignissim mi quis simply neque.</p>
-                            </div><!-- /.contact-two__summery -->
-                        </div><!-- /.contact-two__content -->
-                    </div><!-- /.col-sm-12 col-md-12 col-lg-12 col-xl-4 -->
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
-                        <form action="https://ninetheme.com/themes/html-templates/agrikon/assets/inc/sendemail.php" class="contact-one__form contact-form-validated">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <input type="text" name="name" placeholder="Full Name">
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-lg-12">
-                                    <input type="text" name="email" placeholder="Email Address">
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-lg-12">
-                                    <input type="text" name="phone" placeholder="Phone Number">
-                                </div><!-- /.col-lg-6 -->
-                                <div class="col-lg-12">
-                                    <textarea name="message" placeholder="Write Message"></textarea>
-                                </div><!-- /.col-lg-12 -->
-                                <div class="col-lg-12">
-                                    <button type="submit" class="thm-btn">Send Message</button><!-- /.thm-btn -->
-                                </div><!-- /.col-lg-12 -->
-                            </div><!-- /.row -->
-                        </form>
-                    </div><!-- /.col-sm-12 col-md-12 col-lg-12 col-xl-4 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.contact-two -->
-
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="far fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index-2.html" aria-label="logo image"><img src="{% static 'frontend/assets/images/logo-light.png' %}" width="155" alt="" /></a>
+            "breakpoints": {
+                "0": {
+                    "spaceBetween": 0,
+                    "slidesPerView": 1,
+                    "slidesPerGroup": 1
+                },
+                "640": {
+                    "spaceBetween": 30,
+                    "slidesPerView": 2,
+                    "slidesPerGroup": 2
+                },
+                "992": {
+                    "spaceBetween": 30,
+                    "slidesPerView": 2,
+                    "slidesPerGroup": 2
+                }
+            }}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="projects-one__single">
+                        <img src="{% static 'frontend/assets/images/projects/project-2-2.jpg' %}" alt="">
+                        <div class="projects-one__content">
+                            <h3>Harvest Innovation</h3>
+                            <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects-one__single">
+                        <img src="{% static 'frontend/assets/images/projects/project-2-2.jpg' %}" alt="">
+                        <div class="projects-one__content">
+                            <h3>Harvest Innovation</h3>
+                            <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects-one__single">
+                        <img src="{% static 'frontend/assets/images/projects/project-2-3.jpg' %}" alt="">
+                        <div class="projects-one__content">
+                            <h3>Harvest Innovation</h3>
+                            <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects-one__single">
+                        <img src="{% static 'frontend/assets/images/projects/project-2-4.jpg' %}" alt="">
+                        <div class="projects-one__content">
+                            <h3>Harvest Innovation</h3>
+                            <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects-one__single">
+                        <img src="{% static 'frontend/assets/images/projects/project-2-2.jpg' %}" alt="">
+                        <div class="projects-one__content">
+                            <h3>Harvest Innovation</h3>
+                            <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="projects-one__single">
+                        <img src="{% static 'frontend/assets/images/projects/project-2-4.jpg' %}" alt="">
+                        <div class="projects-one__content">
+                            <h3>Harvest Innovation</h3>
+                            <a href="project-details.html" class="projects-one__button"><i class="agrikon-icon-right-arrow"></i></a><!-- /.projects-one__button -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="agrikon-icon-email"></i>
-                    <a href="mailto:needhelp@agrikon.com">needhelp@agrikon.com</a>
-                </li>
-                <li>
-                    <i class="agrikon-icon-telephone"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
-                </li>
-            </ul><!-- /.mobile-nav__contact -->
-            <div class="mobile-nav__top">
-                <div class="mobile-nav__language">
-                    <img src="{% static 'frontend/assets/images/resources/flag-1-1.jpg' %}" alt="">
-                    <label class="sr-only" for="language-select">select language</label>
-                    <!-- /#language-select.sr-only -->
-                    <select class="selectpicker" id="language-select">
-                        <option value="english">English</option>
-                        <option value="arabic">Arabic</option>
-                    </select>
-                </div><!-- /.mobile-nav__language -->
-                <div class="mobile-nav__social">
-                    <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#" aria-label="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-                </div><!-- /.mobile-nav__social -->
-            </div><!-- /.mobile-nav__top -->
+            <div class="swiper-pagination" id="projects-one__swiper-pagination"></div>
         </div>
     </div>
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="fa fa-search"></i>
-                </button>
-            </form>
+</div>
+
+<section class="call-to-action__three jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 50%">
+    <img class="call-to-action__three__bg jarallax-img" src="{% static 'frontend/assets/images/backgrounds/cta-1-bg-1.jpg' %}" alt="parallax-image" />
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-duration="1500ms">
+                <div class="call-to-action__three-image">
+                    <img src="{% static 'frontend/assets/images/resources/cta-3-1.jpg' %}" alt="">
+                    <img src="{% static 'frontend/assets/images/resources/cta-3-2.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="call-to-action__three-content">
+                    <h3>Providing High Quality
+                        Products</h3>
+                    <a href="about.html" class="thm-btn">Discover More</a><!-- /.thm-btn -->
+                </div>
+            </div>
         </div>
     </div>
-    
+</section>
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+<section class="testimonials-one">
+    <img src="{% static 'frontend/assets/images/icons/testimonials-bg-1-1.png' %}" class="testimonials-one__bg" alt="">
+    <div class="container">
+        <h2 class="testimonials-one__title">Testimonials</h2>
+        <div id="testimonials-one__carousel" class="testimonials-one__carousel swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonials-one__icons">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
+                        refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
+                        reprehenderit in esse nulla pariatur.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials-one__icons">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
+                        refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
+                        reprehenderit in esse nulla pariatur.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials-one__icons">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>This is due to their excellent service, competitive pricing and customer support. It’s throughly
+                        refresing to get such a personal touch. Duis aute lorem ipsum is simply free text irure dolor in
+                        reprehenderit in esse nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
 
+        <div id="testimonials-one__thumb" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonials-one__image">
+                        <img src="{% static 'frontend/assets/images/resources/testimonials-1-1.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials-one__image">
+                        <img src="{% static 'frontend/assets/images/resources/testimonials-1-2.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials-one__image">
+                        <img src="{% static 'frontend/assets/images/resources/testimonials-1-3.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- template js -->
-    <script src="assets/js/theme.js"></script>   
+        <div id="testimonials-one__meta" class="testimonials-one__carousel swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonials-one__meta">
+                        <h4>Jessica Brown</h4>
+                        <span>Customer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials-one__meta">
+                        <h4>Caleb Hoffman</h4>
+                        <span>Customer</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonials-one__meta">
+                        <h4>Bradley Kim</h4>
+                        <span>Customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination" id="testimonials-one__swiper-pagination"></div>
+    </div>
+</section>
+
+</section>
+    <div class="blog-home__slogan">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="blog-home__slogan-main">
+                        <i class="agrikon-icon-farm"></i>
+                        <div class="blog-home__slogan-content">
+                            <h3>We Care About Our Agriculture Growth</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered in some form, by injected humour words.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="blog-home__slogan-image">
+                        <img src="{% static 'frontend/assets/images/resources/blog-cta-1.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
