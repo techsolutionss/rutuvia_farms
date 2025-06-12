@@ -3,9 +3,20 @@
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background: #f6f5f2;
+}
+
+.contact-infos__single {}
+
+.service-two__card {
+	margin-bottom: 30px;
 }
 
 /* service item  */
+section.service-area {
+	padding: 100px 0;
+}
+
 .service-item {
 	padding: 10px;
 	border-radius: 5px;

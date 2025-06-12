@@ -1,5 +1,5 @@
 {% extends "frontend/base.html" %}
-{% load static i18n %}
+{% load static i18n custom_base_tags %}
 {% block content %}
     <section class="page-header">
         <div class="page-header__bg" style="background-image: url({% static 'frontend/assets/images/backgrounds/page-header-bg-1-1.jpg' %});"></div>
@@ -10,13 +10,13 @@
             <h2>Services</h2>
         </div>
     </section>
-    <section class="service-area">
+    <section class="service-area" style="padding: 100px 0;">
         <div class="container">
-            {% if services %}
+            {% if not services %}
                 <div class="row">
-                    {% for service in services %}
-                        <div class="col-sm-12 col-md-6 col-lg-3">
-                            <div class="service-two__card">
+                    {% for service in 8|times %}
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="service-two__card border-shadow">
                                 <div class="service-two__card-image">
                                     <img src="{% static 'frontend/assets/images/services/service-2-1.jpg' %}" alt="">
                                 </div>

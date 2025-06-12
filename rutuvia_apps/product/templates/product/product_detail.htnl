@@ -1,0 +1,7 @@
+{% load static i18n  %} 
+
+{% extends "frontend/base.html" %}
+
+{% block content %}
+
+{% endblock %}
