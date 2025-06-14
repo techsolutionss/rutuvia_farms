@@ -1,0 +1,25 @@
+{% extends "frontend/base.html" %}
+
+{% load static i18n %}
+
+{% block content %}
+
+<div class="product-card">
+    <div class="product-image">
+        
+        <img src="assets/images/image.png" alt="Rice_image">
+    </div>
+    <div class="product-title"><h1>Rice</h1></div>
+    <div class="product-category"><h2>Rutuvia Foods</h2></div>
+    <div class="rating">
+        <!-- ★★★★★ <span class="rating-count">(222)</span> -->
+    </div>
+    <div class="price-container">
+        <span class="original-price">₦24.00</span>
+        <span class="discounted-price">₦18.00</span>
+        <span class="discount-badge">10% OFF</span>
+    </div>
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+
+{% endblock %}

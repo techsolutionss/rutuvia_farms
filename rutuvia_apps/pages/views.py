@@ -15,6 +15,13 @@ class HomeTemplateView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(HomeTemplateView, self).get_context_data(**kwargs)
         return context
+    
+class CartTemplateView(TemplateView):
+    template_name = "pages/cart.html"
+
+    def render_to_response(self, context, **kwargs):
+        response = super(CartTemplateView, self).render_to_response(context, **kwargs)
+        return response
 
 class AboutTemplateView(TemplateView):
     template_name = "pages/about.html"
@@ -38,7 +45,7 @@ class ContactTemplateView(TemplateView):
         context = super(ContactTemplateView, self).get_context_data(**kwargs)
         context["form"] = ContactForm()
         return context
-
+    
     def post(self, request, *args, **kwargs):
         form = ContactForm(request.POST)
         if form.is_valid(): 
