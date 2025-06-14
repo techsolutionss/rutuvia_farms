@@ -1,0 +1,474 @@
+:root {
+    --primary-color: #2e7d32;
+    --primary-light: #4CAF50;
+    --text-light: #666;
+    --border-color: #e0e0e0;
+    --light-gray: #fafafa;
+    --primary-gradient: linear-gradient(135deg, #2e7d32 0%, #4CAF50 100%);
+    --dark: #1a2e35;
+    --light: #f8f9fa;
+    --border: #e0e0e0;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}
+
+/*-----------------------------------------
+# Rutuvia_cart
+------------------------------------------*/
+
+/*-----------------------------------------------
+# Complete css styling for Rutuvia_cart_card 
+------------------------------------------------*/
+
+.product-card {
+    width: 260px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    margin-top: 100px;
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    background-color: 0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    border: 2px solid #ddd;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: -15px;
+    color: #333333;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+.product-category {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 2px;
+    font-family: Poppins, sans-serif;
+}
+
+.rating {
+    color: #FFD700;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-count {
+    color: #777;
+    font-size: 25px;
+    margin-left: 5px;
+    align-items: center;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.discounted-price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.discount-badge {
+    background-color: #ff9f00;
+    color: white;
+    font-weight: bold;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 5px;
+    font-family: Poppins, sans-serif;
+}
+
+.add-to-cart {
+    width: 100%;
+    background-color: #228B22;
+    border: none;
+    color: white;
+    padding: 19px 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+.price-container {
+    margin-bottom: 5px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-right: -50px;
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+}
+
+.discounted-price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-left: auto;
+    font-weight: 800;
+}
+
+.discount-badge {
+    background-color: #ff9f00;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: auto;
+    font-weight: 800;
+
+}
+
+/*-----------------------------------------
+# Rutuvia Auth Card Styles Area (create account, login, forgot password)
+-----------------------------------------*/
+/* body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    background-color: var(--light-gray);
+    -webkit-font-smoothing: antialiased;
+}  */
+
+.card-body {
+    max-width: 420px;
+}
+
+.auth-header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+}
+
+.secure-badge {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.auth-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: none;
+    max-width: fit-content;
+}
+
+.auth-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.auth-subtitle {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.auth-footer {
+    color: var(--text-light);
+}
+
+.auth-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+/* Fix for autofill styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #333 !important;
+    font-size: 1rem !important;
+}
+
+
+/*-----------------------------------------
+# Rutuvia Cart select Styles Area
+-----------------------------------------*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.cart-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cart-items {
+    flex: 2;
+    min-width: 300px;
+}
+
+.cart-summary {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    height: fit-content;
+    position: sticky;
+    top: 1rem;
+}
+
+.cart-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.item-price {
+    color: var(--primary);
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.item-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quantity-btn {
+    background: var(--light);
+    border: none;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    padding: 0.5rem;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.coupon-form {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.coupon-input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.apply-btn {
+    background: var(--dark);
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.total-row {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.checkout-btn {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.checkout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.empty-cart i {
+    font-size: 3rem;
+    color: var(--border);
+    margin-bottom: 1rem;
+}
+
+.continue-shopping {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .cart-container {
+        flex-direction: column;
+    }
+
+    .cart-summary {
+        position: static;
+    }
+
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .item-image {
+        width: 100%;
+        height: auto;
+    }
+}

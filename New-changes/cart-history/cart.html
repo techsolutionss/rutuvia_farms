@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Rutuvia</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Rutuvia</div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-items">
+                <h2 class="cart-title">Your Cart (3 items)</h2>
+                
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <img src="static/assets/images/rt2.jpg" alt="Product" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Rice bag</h3>
+                        <p>Color: White | Size: M</p>
+                        <p class="item-price">$24.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <img src="static/assets/images/rt.jpg" alt="Product" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Rice bag</h3>
+                        <p>Color: Blue | 750ml</p>
+                        <p class="item-price">$19.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="2" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <img src="static/assets/images/image.png" alt="Product" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Improved Seeds bag</h3>
+                        <p>Set of 4</p>
+                        <p class="item-price">$12.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h2 class="cart-title">Order Summary</h2>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$57.97</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>                
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span>$61.45</span>
+                </div>
+                
+                <button class="checkout-btn">Proceed to Checkout</button>
+                
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;">
+                    <i class="fas fa-lock"></i> Secure Checkout
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Order Confirmed - Rutuvia</title>    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Rutuvia</div>
+        </div>
+    </header>
+    
+    <div class="main-container">
+        <div class="success-card">
+            <div class="success-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+            </div>
+            
+            <h1>Order Confirmed!</h1>
+            <p class="success-message">Thank you for your purchase. We've sent a confirmation email with your order details.</p>
+            
+            <div class="order-details">
+                <div class="detail-row">
+                    <span class="detail-label">Order Number:</span>
+                    <span class="detail-value">#RUT-<span id="order-number">456789</span></span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Date:</span>
+                    <span class="detail-value" id="order-date">June 15, 2023</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Payment Method:</span>
+                    <span class="detail-value">VISA •••• 4242</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Shipping Method:</span>
+                    <span class="detail-value">Standard Delivery (3-5 business days)</span>
+                </div>
+                <div class="detail-row total-row">
+                    <span class="detail-label">Total Paid:</span>
+                    <span class="detail-value">$19.08</span>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="/orders" class="btn btn-primary">View Order Details</a>
+                <a href="/shop" class="btn btn-secondary">Continue Shopping</a>
+            </div>
+            
+            <div class="customer-support">
+                Need help? <a href="/contact" class="support-link">Contact our customer support</a>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
