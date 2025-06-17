@@ -49,13 +49,6 @@ class ContactTemplateView(TemplateView):
     def post(self, request, *args, **kwargs):
         form = ContactForm(request.POST)
         if form.is_valid(): 
-            # contact = Contact(
-            #     fullname=form.cleaned_data["fullname"],
-            #     email=form.cleaned_data["email"],
-            #     phone=form.cleaned_data["phone"],
-            #     subject=form.cleaned_data["subject"],
-            #     message=form.cleaned_data["message"]
-            # )
             contact = Contact(**form.cleaned_data)
             contact.save()
             messages.success(request, "Your message has been sent successfully.")

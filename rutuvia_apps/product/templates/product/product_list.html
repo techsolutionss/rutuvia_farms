@@ -1,0 +1,36 @@
+{% extends "frontend/base.html" %}
+{% load static i18n custom_base_tags %}
+
+{% block content %}
+    <div class="container">
+        {% if product_list|length > 0 %}
+        <div class="product_list">
+            <div class="row">
+                {% for x in 5|times %}
+                {% for product in product_list %}
+                    <div class="col-sm-6 col-lg-4 col-xxl-3">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="{{ product.image.url }}" alt="Rice_image">
+                            </div>
+                            <div class="product-title"><h1>{{ product.name }}</h1></div>
+                            <div class="product-category"><h2>{{ product.category.name }}</h2></div>
+                            <div class="price-container">
+                                <span class="original-price">{{ product.price }}</span>
+                                <span class="discounted-price">₦18.00</span>
+                                <span class="discount-badge">10% OFF</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
+            <div>
+
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

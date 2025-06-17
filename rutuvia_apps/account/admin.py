@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Account
 
-# Register your models here.
+@admin.register(Account)
+class AccountModelAdmin(admin.ModelAdmin):
+    list_display = ["pk", "firstname", "lastname", "email", "phone", "active", "created_at"]

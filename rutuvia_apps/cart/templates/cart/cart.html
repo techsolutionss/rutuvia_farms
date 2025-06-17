@@ -3,23 +3,102 @@
 {% load static i18n %}
 
 {% block content %}
-
-<div class="product-card">
-    <div class="product-image">
+    <div class="container">
+        <div class="header">
+            <div class="logo">Rutuvia</div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
         
-        <img src="assets/images/image.png" alt="Rice_image">
+        <div class="cart-container">
+            <div class="cart-items">
+                <h2 class="cart-title">Your Cart (3 items)</h2>
+                
+                <!-- Cart Item 1 -->
+                <div class="cart-item">
+                    <img src="static/assets/images/rt2.jpg" alt="Product" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Rice bag</h3>
+                        <p>Color: White | Size: M</p>
+                        <p class="item-price">$24.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cart Item 2 -->
+                <div class="cart-item">
+                    <img src="static/assets/images/rt.jpg" alt="Product" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Rice bag</h3>
+                        <p>Color: Blue | 750ml</p>
+                        <p class="item-price">$19.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="2" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cart Item 3 -->
+                <div class="cart-item">
+                    <img src="static/assets/images/image.png" alt="Product" class="item-image">
+                    <div class="item-details">
+                        <h3 class="item-title">Improved Seeds bag</h3>
+                        <p>Set of 4</p>
+                        <p class="item-price">$12.99</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            <button class="remove-btn">
+                                <i class="fas fa-trash"></i> Remove
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h2 class="cart-title">Order Summary</h2>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$57.97</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>                
+                <div class="summary-row total-row">
+                    <span>Total</span>
+                    <span>$61.45</span>
+                </div>
+                
+                <button class="checkout-btn">Proceed to Checkout</button>
+                
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;">
+                    <i class="fas fa-lock"></i> Secure Checkout
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="product-title"><h1>Rice</h1></div>
-    <div class="product-category"><h2>Rutuvia Foods</h2></div>
-    <div class="rating">
-        <!-- ★★★★★ <span class="rating-count">(222)</span> -->
-    </div>
-    <div class="price-container">
-        <span class="original-price">₦24.00</span>
-        <span class="discounted-price">₦18.00</span>
-        <span class="discount-badge">10% OFF</span>
-    </div>
-    <button class="add-to-cart">Add to Cart</button>
-</div>
 
 {% endblock %}

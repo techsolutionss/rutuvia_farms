@@ -7,7 +7,10 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path("", include("rutuvia_apps.pages.urls", namespace="pages"))
+    path("", include("rutuvia_apps.pages.urls", namespace="pages")),
+    path("", include("rutuvia_apps.account.urls", namespace="account")),
+    path("", include("rutuvia_apps.product.urls", namespace="product")),
+    path("", include("rutuvia_apps.cart.urls", namespace="cart"))
 ]
 
 urlpatterns += [
