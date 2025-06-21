@@ -27,6 +27,11 @@
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
+
+:root {
+  --thm-primary: #228b22;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -1837,6 +1842,7 @@ a:hover,
 a:focus,
 a:visited {
   text-decoration: none;
+  color: #006400;
 }
 
 h1,
@@ -2282,6 +2288,10 @@ h6 {
 /*--------------------------------------------------------------
 # Navigations
 --------------------------------------------------------------*/
+.btn.btn-primary.btn-lg {
+  color: green;
+}
+
 .main-menu .container {
   position: relative;
   display: -webkit-box;
@@ -2640,7 +2650,7 @@ h6 {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background: linear-gradient(135deg, #FFA500);
+  background: linear-gradient(135deg, #ffffff);
   border-radius: 5px;
   padding: 18px 17px;
   -webkit-transition: all 500ms ease;
@@ -2648,7 +2658,7 @@ h6 {
 }
 
 .main-header__info-phone:hover {
-  background: linear-gradient(135deg, #228B22);
+  background: linear-gradient(135deg, #ffffff);
 
 }
 

@@ -7,100 +7,100 @@
 }
 
 .border-shadow {
-	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* service item  */
 .service-item {
-	padding: 10px;
-	border-radius: 5px;
-	margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .service-item .thumb {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .service-item .thumb img {
-	height: 120px;
-	width: 120px;
-	border-radius: 100%;
-	border: 1px solid red;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    border: 1px solid red;
 }
 
 /*== Message Box Widget UI Page ==*/
 .notification {
-	padding: 10px;
-	border-radius: 4px;
-	margin-bottom: 40px;
-	position: relative;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
 .notification p {
-	color: #fff;
-	text-align: left;
-	padding-bottom: 0;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 0;
 }
 
 .notification p a {
-	color: rgba(255, 255, 255, 0.71);
-	font-weight: 600;
-	padding: 0 5px;
+    color: rgba(255, 255, 255, 0.71);
+    font-weight: 600;
+    padding: 0 5px;
 }
 
 .notification-close {
-	position: absolute;
-	top: 30%;
-	right: 20px;
-	height: 20px;
-	margin-top: -10px;
-	color: #ffffff;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    height: 20px;
+    margin-top: -10px;
+    color: #ffffff;
 }
 
 .notification-close:hover {
-	color: #fff;
+    color: #fff;
 }
 
 .notification.success {
-	background: #5ECFB1;
+    background: #5ECFB1;
 }
 
 .notification.warning {
-	background-color: #F7F3D7;
+    background-color: #F7F3D7;
 }
 
 .notification.warning .notification-close,
 .notification.warning p {
-	color: #927238;
+    color: #927238;
 }
 
 .notification.error {
-	background-color: #ECC8C5;
+    background-color: #ECC8C5;
 }
 
 .notification.error .notification-close,
 .notification.error p {
-	color: #AB3331;
+    color: #AB3331;
 }
 
 .notification.waitforreview {
-	background: #FBC54F;
+    background: #FBC54F;
 }
 
 /*-------------------------------------->
 # Styling-for-Row11
 --------------------------------------*/
 .row-11 {
-	padding-top: 100px;
-	background-color: rgb(253, 251, 251);
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: rgb(253, 251, 251);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 100px;
 }
 
 /*  */
@@ -147,9 +147,11 @@
     border-color: var(--primary-light);
     box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
 }
-.form-control.has-error{
-	border: 1px solid red;
+
+.form-control.has-error {
+    border: 1px solid red;
 }
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -351,9 +353,10 @@ input:-webkit-autofill:focus {
 /*-----------------------------------------------
 # Complete css styling for Rutuvia_cart_card 
 ------------------------------------------------*/
-.product_list{
+.product_list {
     padding: 40px 0;
 }
+
 .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -417,13 +420,6 @@ input:-webkit-autofill:focus {
     font-size: 25px;
     margin-left: 5px;
     align-items: center;
-}
-
-.price-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
 }
 
 .original-price {
@@ -703,6 +699,7 @@ input:-webkit-autofill:focus {
     .cart-item {
         flex-direction: column;
     }
+
     .item-image {
         width: 100%;
         height: auto;

@@ -6,8 +6,6 @@
 	background: #f6f5f2;
 }
 
-.contact-infos__single {}
-
 .service-two__card {
 	margin-bottom: 30px;
 }
@@ -175,24 +173,12 @@ section.service-area {
 	align-items: center;
 }
 
-.price-container {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	margin-bottom: 5px;
-}
-
 .original-price {
 	text-decoration: line-through;
 	color: #999;
 	font-size: 14px;
-}
-
-
-.discounted-price {
-	font-weight: bold;
-	font-size: 18px;
-	color: #333;
+	justify-content: center;
+	align-items: center;
 }
 
 .discount-badge {
@@ -224,33 +210,4 @@ section.service-area {
 
 .add-to-cart:hover {
 	background-color: #45a049;
-}
-
-.price-container {
-	margin-bottom: 5px;
-}
-
-.original-price {
-	text-decoration: line-through;
-	color: #999;
-	font-size: 14px;
-	margin-right: -50px;
-	font-family: Poppins, sans-serif;
-}
-
-.discounted-price {
-	font-weight: bold;
-	font-size: 18px;
-	color: #333;
-	margin-left: auto;
-}
-
-.discount-badge {
-	background-color: #ff9f00;
-	color: white;
-	padding: 10px 16px;
-	border-radius: 4px;
-	font-size: 12px;
-	margin-left: auto;
-
 }
