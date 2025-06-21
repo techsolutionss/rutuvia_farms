@@ -705,3 +705,26 @@ input:-webkit-autofill:focus {
         height: auto;
     }
 }
+
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+.container,
+.container-fluid {
+    max-width: 100%;
+    /* Ensure containers don't overflow */
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    /* Reset Bootstrap's negative margins */
+}
+
+.swiper-container {
+    overflow: hidden;
+    /* Contain swiper slides */
+}

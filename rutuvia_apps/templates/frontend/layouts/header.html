@@ -40,17 +40,28 @@
                 </li>
             </ul>
             <div class="main-header__info">
-                <a href="#" class="search-toggler main-header__search-btn"><i class="agrikon-icon-magnifying-glass"></i></a>
+                <a href="#" class="search-toggler main-header__search-btn"><i class="agrikon-ico-magnifying-glass"></i></a>
                 <a class="main-header__cart-btn" href="#"><i class="agrikon-icon-account-"></i></a>
                 <a href="tel:92-666-888-0000" class="main-header__create_account">
                     <!-- <i class="fab fa-user"></i> -->
                     <span class="main-header__create_account" >
                     <span class="main-header__create_account_text">
-                        <div class="d-inline-block border rounded p-2 text-center" 
-                        style="width: 200px; border-radius: 6px; border: 2px solid #228B22 !important;">
-                       <a href="{% url 'account:create_user' %}" 
-                          class="text-decoration-none fw-bolder fs-3" 
-                          style="color: #228B22 !important;">CREATE ACCOUNT</a>
+                        <div class="d-inline-block rounded p-3 text-center" 
+                        style="">
+                        <a href="{% url 'account:create_user' %}"
+                        class="btn btn-outline-success fw-bolder fs-3 custom-hover">
+                        CREATE ACCOUNT
+                     </a>
+                     <style>
+                     .custom-hover {
+                        padding: 13px 11px;
+                     }
+                     .custom-hover:hover {
+                       background-color: #228B22 !important;
+                       color: fff !important;
+                       border-color: #228B22 !important;
+                     }
+                     </style>                     
                    </div>
                     </div>    
                 </span>
