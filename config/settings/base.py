@@ -36,7 +36,8 @@ LOCAL_APPS = [
     "rutuvia_apps.pages.apps.PagesConfig",
     "rutuvia_apps.account.apps.AccountConfig",
     "rutuvia_apps.product.apps.ProductConfig",
-    "rutuvia_apps.cart.apps.CartConfig"
+    "rutuvia_apps.cart.apps.CartConfig",
+    "rutuvia_apps.orders.apps.OrderConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS

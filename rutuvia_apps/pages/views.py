@@ -5,6 +5,17 @@ from django.views.generic.base import TemplateView
 from .forms import ContactForm
 from .models import Contact, Service
 
+class OrdersTemplateView(TemplateView):
+    template_name = "pages/orders.html"
+
+    def render_to_response(self, context, **kwargs):
+        response = super(OrdersTemplateView, self).render_to_response(context, **kwargs)
+        return response
+    
+    def get_context_data(self, **kwargs):
+        context = super(OrdersTemplateView, self).get_context_data(**kwargs)
+        return context
+    
 class HomeTemplateView(TemplateView):
     template_name = "pages/index.html"
 

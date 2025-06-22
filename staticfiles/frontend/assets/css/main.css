@@ -3952,12 +3952,12 @@ h6 {
 }
 
 .main-slider__two .swiper-slide h2::before {
-  background-image: url(../images/icons/main-slider-icon-2-1.png);
+  background-image: url(../mages/icons/main-slider-icon-2-1.png);
   right: 100%;
 }
 
 .main-slider__two .swiper-slide h2::after {
-  background-image: url(../images/icons/main-slider-icon-2-2.png);
+  background-image: url(../mages/icons/main-slider-icon-2-2.png);
   left: 100%;
 }
 

@@ -18,7 +18,7 @@
     </div>
     <nav class="main-menu">
         <div class="container">
-            <div class="logo-box">
+            <div class="logo-box" style="margin-left: 22px; height: 90px; width: 90px;">
                 <a href="{% url 'pages:index' %}" aria-label="logo image"><img src="{% static 'frontend/assets/images/Rutuvia_Favicon.png' %}" width="153" alt=""></a>
                 <span class="fa fa-bars mobile-nav__toggler"></span>
             </div>
@@ -44,7 +44,7 @@
                 <a class="main-header__cart-btn" href="#"><i class="agrikon-icon-account-"></i></a>
                 <a href="tel:92-666-888-0000" class="main-header__create_account">
                     <!-- <i class="fab fa-user"></i> -->
-                    <span class="main-header__create_account" >
+                    <span class="main-header__create_account">
                     <span class="main-header__create_account_text">
                         <div class="d-inline-block rounded p-3 text-center" 
                         style="">
@@ -54,7 +54,9 @@
                      </a>
                      <style>
                      .custom-hover {
-                        padding: 13px 11px;
+                        padding: 13px 12px;
+                        max-width: 100%;
+                        box-sizing: border-box;
                      }
                      .custom-hover:hover {
                        background-color: #228B22 !important;

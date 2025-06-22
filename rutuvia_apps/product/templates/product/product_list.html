@@ -2,30 +2,30 @@
 {% load static i18n custom_base_tags %}
 
 {% block content %}
-    <div class="container">
-        {% if product_list|length > 0 %}
-        <div class="product_list">
-            <div class="row">
-                {% for x in 5|times %}
-                {% for product in product_list %}
-                    <div class="col-sm-6 col-lg-4 col-xxl-3">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="{{ product.image.url }}" alt="Rice_image">
-                            </div>
-                            <div class="product-title" style="text-align: center; margin-bottom: 6px"><h1>{{ product.name }}</h1></div>
-                            <div class="product-category" style="text-align: center;"><h2>{{ product.category.name }}</h2></div>
-                            <div class="price-container d-block text-center">
-                                <span class="discounted-price">{{ discounted.price }}</span>
-                                <span class="discounted-text"><h4>₦18.00</h4></span>
-                            </div>
-                            <button class="add-to-cart py-2">Add to Cart</button>
+<div class="container">
+    {% if product_list|length > 0 %}
+    <div class="product_list">
+        <div class="row">
+            {% for x in 5|times %}
+            {% for product in product_list %}
+                <div class="col-sm-6 col-lg-3 col-xxl-3">
+                    <div class="product-card" style="width: 270px; height: 480px;">
+                        <div class="product-image" style="height: 220px; overflow: hidden;">
+                            <img src="{{ product.image.url }}" alt="Rice_image" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
+                        <div class="product-title" style="text-align: center; margin-bottom: 6px"><h1>{{ product.name }}</h1></div>
+                        <div class="product-category" style="text-align: center;"><h2>{{ product.category.name }}</h2></div>
+                        <div class="price-container d-block text-center">
+                            <span class="discounted-price">{{ discounted.price }}</span>
+                            <span class="discounted-text"><h4>₦18.00</h4></span>
+                        </div>
+                        <button class="add-to-cart py-2">Add to Cart</button>
                     </div>
-                {% endfor %}
-                {% endfor %}
-            </div>
-        </div>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
         {% else %}
             <div>No products available</div>
         {% endif %}
