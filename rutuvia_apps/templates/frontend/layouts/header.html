@@ -17,8 +17,8 @@
         </div>
     </div>
     <nav class="main-menu">
-        <div class="container">
-            <div class="logo-box" style="margin-left: 22px; height: 90px; width: 90px;">
+        <div class="container px-0">
+            <div class="logo-box fluid" style=" height: 90px; width: 90px;">
                 <a href="{% url 'pages:index' %}" aria-label="logo image"><img src="{% static 'frontend/assets/images/Rutuvia_Favicon.png' %}" width="153" alt=""></a>
                 <span class="fa fa-bars mobile-nav__toggler"></span>
             </div>
@@ -53,6 +53,9 @@
                         CREATE ACCOUNT
                      </a>
                      <style>
+                        .logo-box {
+                            margin-right: 20px;
+                        }
                      .custom-hover {
                         padding: 13px 12px;
                         max-width: 100%;

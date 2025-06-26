@@ -1,5 +1,6 @@
 {% extends 'frontend/base.html' %}
 {% load static i18n custom_base_tags %}
+{% load widget_tweaks %}
 
 {% block content %}
 <!-- Main Content -->
@@ -22,20 +23,18 @@
     {% endif %}
     <div class="row justify-content-center">
         <div class="col-md-6 col-md-6 col-lg-6">
-            <div class="auth-card card p-4 p-md-5 mb-4">
+            <div class="auth-card card p-4 p-md-5 mb-4" style="border: 1px solid #ddd; border-radius: 8px;">
                 <div class="card-body">
                     <h1 class="auth-title text-center mb-4">Create Your Account</h1>
                     <form autocomplete="off" method="POST" action="{% url 'account:create_user' %}">
                         {% csrf_token %}
                         <!-- Name Row -->
-                        <div class="row g-3 mb-3">
-                            <div class="col-md-6">
+                        <div class="mb-3">
                                 {{ form.firstname }}
                             </div>
-                            <div class="col-md-6">
+                            <div class="mb-3">
                                 {{ form.lastname }}
                             </div>
-                        </div>
                         
                         <!-- Email -->
                         <div class="mb-3">
@@ -74,14 +73,14 @@
                         
                         <!-- Submit Button -->
                         <div class="d-grid mb-4">
-                            <button type="submit" class="btn btn-primary btn-lg" style="color: #228B22">Create Account</button>
+                            <button type="submit" class="btn btn-primary custom-btn">Create Account</button>
                         </div>
                         
                         <!-- Footer Links -->
                         <div class="text-center">
                             <p class="auth-footer">
                                 Already have an account? 
-                                <a href="#" class="auth-link">Sign in</a>
+                                <a href="#" class="auth-link"style="hover: none;">Sign in</a>
                             </p>
                         </div>
                     </form>
