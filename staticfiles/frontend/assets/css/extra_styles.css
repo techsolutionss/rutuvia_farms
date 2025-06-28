@@ -103,9 +103,17 @@
     padding-bottom: 100px;
 }
 
+.card-body p {
+    color: red;
+}
+
 .auth-card.card {
-    max-width: 440px;
     background-color: #f8f8f7;
+    width: 75%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 100%;
+    min-height: 400px;
 }
 
 .auth-card input.form-control {
@@ -195,12 +203,10 @@ input:-webkit-autofill:focus {
     background: var(--primary-gradient);
 }
 
-.auth-title {
-    font-size: 2rem;
+h4.auth-title {
     font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-    text-align: center;
+    margin-top: 1.7rem;
+    color: var(--primary-color)
 }
 
 .form-group {
@@ -246,7 +252,6 @@ input:-webkit-autofill:focus {
     background: var(--primary-color);
     color: white;
     border: none;
-    padding-bottom: 1rem;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 500;
@@ -254,12 +259,13 @@ input:-webkit-autofill:focus {
     transition: var(--transition);
 }
 
-.btn-primary p {
-    margin-top: 2px;
-}
-
 .btn-primary:hover {
     background: var(--primary-light);
+}
+
+.custom-btn {
+    padding: 12px 20px;
+    font-weight: 600;
 }
 
 .auth-footer {

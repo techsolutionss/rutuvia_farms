@@ -4,7 +4,7 @@
 
 {% block content %}
 <!-- Main Content -->
-<main class="container my-5">
+<main class="container my-5">  <!-- Changed my-5 to my-4 -->
     {% if messages %}
         {% for message in messages %}
             <div class="notification {{message.tags}} fl-wrap">
@@ -22,22 +22,21 @@
         {% endif %}
     {% endif %}
     <div class="row justify-content-center">
-        <div class="col-md-6 col-md-6 col-lg-6">
-            <div class="auth-card card p-4 p-md-5 mb-4" style="border: 1px solid #ddd; border-radius: 8px;">
-                <div class="card-body">
-                    <h1 class="auth-title text-center mb-4">Create Your Account</h1>
+        <div class="col-md-8 col-lg-6">  <!-- Changed from col-md-6 col-md-6 col-lg-6 to col-md-8 col-lg-6 -->
+            <div class="auth-card card p-4 mb-4" style="border: 1px solid #ddd; border-radius: 8px;">  <!-- Removed p-md-5 -->
+                <div class="card-body p-0">  <!-- Added p-0 to remove default card-body padding -->
+                    <h4 class="auth-title text-center mb-4">Create Your Account</h4>
                     <form autocomplete="off" method="POST" action="{% url 'account:create_user' %}">
                         {% csrf_token %}
                         <!-- Name Row -->
-                        <div class="mb-3">
-                                {{ form.firstname }}
-                            </div>
-                            <div class="mb-3">
-                                {{ form.lastname }}
-                            </div>
-                        
+                        <div class="mb-3 mx-auto" style="width: 90%; max-width: 400px;">
+                            {{ form.firstname }}
+                        </div>
+                        <div class="mb-3 mx-auto" style="width: 90%; max-width: 400px;">
+                            {{ form.lastname }}
+                        </div>
                         <!-- Email -->
-                        <div class="mb-3">
+                        <div class="mb-3 mx-auto" style="width: 90%; max-width: 400px;">
                             {{ form.email }}
                             {% if form.email.errors %}
                                 {% for error in form.email.errors %}
@@ -47,7 +46,7 @@
                         </div>
                         
                         <!-- Phone -->
-                        <div class="mb-3">
+                        <div class="mb-3 mx-auto" style="width: 90%; max-width: 400px;">
                             {{ form.phone }}
                             {% if form.phone.errors %}
                                 {% for error in form.phone.errors %}
@@ -57,12 +56,12 @@
                         </div>
                         
                         <!-- Password -->
-                        <div class="mb-3">
+                        <div class="mb-3 mx-auto" style="width: 90%; max-width: 400px;">
                             {{ form.password }}
                         </div>
                         
                         <!-- Confirm Password -->
-                        <div class="mb-4">
+                        <div class="mb-3 mx-auto" style="width: 90%; max-width: 400px;">
                             {{ form.confirm_password }}
                             {% if form.confirm_password.errors %}
                                 {% for error in form.confirm_password.errors %}
@@ -72,15 +71,15 @@
                         </div>
                         
                         <!-- Submit Button -->
-                        <div class="d-grid mb-4">
-                            <button type="submit" class="btn btn-primary custom-btn">Create Account</button>
+                        <div class="mb-4 mx-auto text-start" style="width: 90%; max-width: 400px;">
+                            <button type="submit" class="btn btn-primary" style="padding: 10px 20px; font-size: 1.1rem;">Create Account</button>
                         </div>
                         
                         <!-- Footer Links -->
                         <div class="text-center">
-                            <p class="auth-footer">
+                            <p class="auth-footer mb-0">  <!-- Added mb-0 -->
                                 Already have an account? 
-                                <a href="#" class="auth-link"style="hover: none;">Sign in</a>
+                                <a href="#" class="auth-link" style="hover: none;">Sign in</a>
                             </p>
                         </div>
                     </form>
