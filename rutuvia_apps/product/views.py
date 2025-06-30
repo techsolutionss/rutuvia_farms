@@ -8,7 +8,7 @@ from .models import Product
 class ProductListView(ListView):
     model = Product
     template_name = "product/product_list.html"
-    # paginate_by = 10
+    # paginate_by = 8
     
     def get_queryset(self):
         queryset = super(ProductListView, self).get_queryset()
