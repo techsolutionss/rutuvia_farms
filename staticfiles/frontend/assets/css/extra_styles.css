@@ -4,7 +4,6 @@
     --text-light: #666;
     --border-color: #e0e0e0;
     --light-gray: #fafafa;
-    /* Added missing variables (no style changes) */
     --primary-gradient: linear-gradient(to right, #198d19, #28a745);
     --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
