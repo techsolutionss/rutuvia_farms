@@ -8,26 +8,46 @@
         <div class="row">
             {% for x in 5|times %}
             {% for product in product_list %}
-                <div class="col-sm-6 col-lg-3 col-xxl-3">
-                    <div class="product-card" style="width: 270px; height: 480px;">
-                        <div class="product-image" style="height: 220px; overflow: hidden;">
+                <div class="col-sm-6 col-lg-4 col-xxl-4 pb-30">
+                    <div class="product-card" style="width: 100%; max-width: 420px; height: 600px; margin: 0 auto; border-radius: 30px;">
+                        <div class="product-image" style="height: 350px; overflow: hidden; object-fit: cover; border-radius: 30px;">
+                            {% if product.discounted %}
+                                <span class="badge bg-success" style="position: absolute; top: 10px; left: 10px;">{{ product.discounted.discount }}% OFF</span>
+                            {% endif %}
                             <img src="{{ product.image.url }}" alt="Rice_image" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                        <div class="product-title" style="text-align: center; margin-bottom: 6px"><h1>{{ product.name }}</h1></div>
-                        <div class="product-category" style="text-align: center;"><h2>{{ product.category.name }}</h2></div>
-                        <div class="price-container d-block text-center">
-                            <span class="discounted-price">{{ discounted.price }}</span>
-                            <span class="discounted-text"><h4>₦18.00</h4></span>
+                        
+                        <div style="padding: 10px; height: 260px; display: flex; flex-direction: column;">
+                            <div class="product-title" style="text-align: center; margin-bottom: 6px">
+                                <h1 style="margin: 0;"><i class="bi bi-shield-check" style="font-size: 22px; padding: 8px;"></i>{{ product.name }}</h1>
+                            </div>
+                            
+                            <!-- REPLACEMENT STARTS HERE -->
+                            <div class="d-flex justify-content-center align-items-center my-2">  <!-- Changed gap-3 to gap-4 -->
+                                <div class="d-flex align-items-center me-4">
+                                  <i class="bi bi-cash-stack me-1"></i>
+                                  <h5 class="mb-0">₦18.00</h5>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                  <i class="bi bi-box-seam me-1"></i>
+                                  <span>{{ product.category.name }}</span>
+                                </div>
+                              </div>
+                            <!-- REPLACEMENT ENDS HERE -->
+                            
+                            <button class="add-to-cart btn w-100 py-2 my-2 d-flex align-items-center justify-content-center" 
+                                style="height: 49px; border-radius: 30px; background-color: #228B22; color: white;">
+                                Add to cart
+                            </button>
                         </div>
-                        <button class="add-to-cart py-2">Add to Cart</button>
                     </div>
                 </div>
             {% endfor %}
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
+    {% else %}
+        <div>No products available</div>
+    {% endif %}
 </div>
-        {% else %}
-            <div>No products available</div>
-        {% endif %}
-    </div>
 {% endblock %}

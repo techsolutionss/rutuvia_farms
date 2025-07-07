@@ -3727,8 +3727,9 @@ h6 {
 
 .main-slider .swiper-slide .thm-btn {
   background-color: #FFA500;
+  padding: 12px 19px;
   opacity: 0;
-  font-size: 28px;
+  font-size: 18px;
   -webkit-transform: translateY(100px);
   transform: translateY(100px);
   -webkit-transition-delay: 2500ms;

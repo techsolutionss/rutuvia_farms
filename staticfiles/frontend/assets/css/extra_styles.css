@@ -376,14 +376,12 @@ h4.auth-title {
     font-weight: bold;
     margin-bottom: -15px;
     color: #333333;
-    text-align: center;
     font-family: Poppins, sans-serif;
 }
 
 .product-category {
     font-size: 14px;
     color: #777;
-    text-align: center;
     margin-bottom: 2px;
     font-family: Poppins, sans-serif;
 }
@@ -643,4 +641,16 @@ h4.auth-title {
         width: 100%;
         height: auto;
     }
+}
+
+.tagline {
+    display: block;
+    margin-left: 15px;
+    /* Bootstrap's default column padding */
+}
+
+h2 {
+    margin-left: 15px;
+    /* Match the span's alignment */
+    padding-left: 0;
 }
