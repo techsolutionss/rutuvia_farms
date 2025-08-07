@@ -2450,7 +2450,7 @@ h6 {
 .main-menu .main-menu__list>li:hover>a,
 .stricky-header .main-menu__list>li.current>a,
 .stricky-header .main-menu__list>li:hover>a {
-  color: rgb(37, 102, 43);
+  color: #28a745;
   text-shadow: 0px 0 0 currentColor;
 }
 

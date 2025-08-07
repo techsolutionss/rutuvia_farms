@@ -1,0 +1,53 @@
+{% extends "frontend/base.html" %}
+{% load static i18n custom_base_tags %}
+
+{% block content %}
+<div class="container">
+    {% if product_list|length > 0 %}
+    <div class="product_list">
+        <div class="row">
+            {% for x in 5|times %}
+            {% for product in product_list %}
+                <div class="col-sm-6 col-lg-4 col-xxl-4 pb-30">
+<div class="product-card" style="width: 100%; max-width: 420px; min-height: 550px; height: auto; margin: 0 auto; border-radius: 30px;">
+    <div class="product-image" style="height: 350px; overflow: hidden; object-fit: cover; border-radius: 30px;">
+                            {% if product.discounted %}
+                                <span class="badge bg-success" style="position: absolute; top: 10px; left: 10px;">{{ product.discounted.discount }}% OFF</span>
+                            {% endif %}
+                            <img src="{{ product.image.url }}" alt="Rice_image" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        
+                        <div style="padding: 10px; height: 260px; display: flex; flex-direction: column;">
+                            <div class="product-title" style="text-align: center; margin-bottom: 6px">
+                                <h1 style="margin: 0;"><i class="bi bi-shield-check" style="font-size: 22px; padding: 8px;"></i>{{ product.name }}</h1>
+                            </div>
+                          <div class="d-flex justify-content-center align-items-center my-2" style="gap: 20px;"> 
+                            
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-cash-stack me-1" style="padding: 4px;"></i>
+                                <h5>₦{{ product.price }}</h5>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-box-seam me-1" style="padding: 4px;"></i>
+                                <span>{{ product.category.name }}</span>
+                            </div>
+                            </div>
+                            <div class="product-description" style="text-align: center; flex-grow: 1; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                                <p>{{ product.description }}</p>
+                            </div> 
+                            <button class="add-to-cart btn w-100 py-2 my-2 d-flex align-items-center justify-content-center" 
+                                style="height: 49px; border-radius: 30px; background-color: #228B22; color: white;">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+    {% else %}
+        <div>No products available</div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -2441,7 +2441,7 @@ h6 {
 .main-menu .main-menu__list>li:hover>a,
 .stricky-header .main-menu__list>li.current>a,
 .stricky-header .main-menu__list>li:hover>a {
-  color: rgb(37, 102, 43);
+  color: #28a745;
   text-shadow: 0px 0 0 currentColor;
 }
 
@@ -6275,7 +6275,7 @@ h2 {
 # Services
 --------------------------------------------------------------*/
 .service-one {
-  background-color: var(--thm-primary);
+  background-color: transparent;
   padding-top: 80px;
   padding-bottom: 50px;
   position: relative;
@@ -6285,7 +6285,7 @@ h2 {
   content: "";
   width: 100%;
   height: 16px;
-  background-image: url(../images/shapes/ripped-paper-primary-up.png);
+  background-image: url(../image/shapes/ripped-paper-primary-up.png);
   position: absolute;
   top: -16px;
   left: 0;
@@ -6366,7 +6366,7 @@ h2 {
   margin: 0;
   font-size: 20px;
   font-weight: 600;
-  color: #255946;
+  color: #28a745;
   text-align: center;
 }
 
@@ -6430,7 +6430,7 @@ h2 {
   content: "";
   width: 100%;
   height: 16px;
-  background-image: url(../images/shapes/ripped-paper-gray-up.png);
+  background-image: url(../image/shapes/ripped-paper-gray-up.png);
   position: absolute;
   top: -16px;
   left: 0;
@@ -6474,7 +6474,7 @@ h2 {
   content: "";
   width: 100%;
   height: 16px;
-  background-image: url(../images/shapes/ripped-paper-white-up.png);
+  background-image: url(../images\/shapes/ripped-paper-white-up.png);
   position: absolute;
   top: -16px;
   left: 0;
