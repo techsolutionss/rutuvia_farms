@@ -83,23 +83,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': env('DATABASE_NAME'),
-#        'USER': env('DATABASE_USER'),
-#        'PASSWORD': env('DATABASE_PASSWORD'),
-#        'HOST': env('DATABASE_HOST', default='localhost'),
-#        'PORT': '3306'
-#    }
-# }
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3', 
-        'NAME': BASE_DIR / 'db.sqlite3',         
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.mysql',
+       'NAME': env('DATABASE_NAME'),
+       'USER': env('DATABASE_USER'),
+       'PASSWORD': env('DATABASE_PASSWORD'),
+       'HOST': env('DATABASE_HOST', default='localhost'),
+       'PORT': '3306'
+   }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3', 
+#         'NAME': BASE_DIR / 'db.sqlite3',         
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -157,6 +157,6 @@ MEDIA_URL = "/media/"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-ADMIN_URL = "rutuvia/admin/"
+ADMIN_URL = env("DJANGO_ADMIN_URL")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
