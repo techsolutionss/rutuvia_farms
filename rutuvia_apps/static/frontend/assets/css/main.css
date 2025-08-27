@@ -1830,6 +1830,7 @@ body {
   color: var(--thm-color);
   font-size: 16px;
   line-height: 2.125;
+  overflow-x: hidden;
 }
 
 a,
@@ -2297,7 +2298,7 @@ h6 {
 .main-menu {
   -webkit-box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   z-index: 91;
 }
@@ -3727,7 +3728,7 @@ h6 {
 
 .main-slider .swiper-slide .thm-btn {
   background-color: #FFA500;
-  padding: 12px 19px;
+  padding: 6px 30px;
   opacity: 0;
   font-size: 18px;
   -webkit-transform: translateY(100px);
@@ -5436,11 +5437,12 @@ h2 {
 .projects-one__single {
   position: relative;
   overflow: hidden;
+  width: 100%;
   border-radius: 5px;
   margin-bottom: 30px;
 }
 
-.projects-one__single>img {
+.projects-one__single > img {
   width: 100%;
   height: 500px;
   object-fit: cover;
@@ -5485,12 +5487,11 @@ h2 {
     font-size: 25px;
   }
 }
-
+/* 
 @media (min-width: 992px) {
   .projects-one__content h3 {
-    max-width: 160px;
   }
-}
+} */
 
 @media (min-width: 1200px) {
   .projects-one__content h3 {
@@ -7897,7 +7898,6 @@ h2 {
 --------------------------------------------------------------*/
 .testimonials-one {
   background: linear-gradient(90deg, #3f743f, #255a47, #1f751f, #006400);
-  ;
   position: relative;
   padding-top: 70px;
   padding-bottom: 140px;
@@ -7969,6 +7969,7 @@ h2 {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0.04;
+  width: 100%;
 }
 
 .testimonials-one .container {

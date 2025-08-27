@@ -12,15 +12,16 @@
             </div>
             <div class="topbar__right">
                 <a href="mailto:rutuviafarmsandfoods@gmail.com"><i class="Rutuvia-icon-email"></i>Rutuvia email</a>
-                <a href="#"><i class="agrikon-icon-clock"></i>Mon - Sat 8:00 - 6:30, Sunday - CLOSED</a>
+                <a href="#"><i class="agrikon-icon-clock"></i>Mon - Sat 8:00 - 5:30, Sunday - CLOSED</a>
             </div>
         </div>
     </div>
     <nav class="main-menu">
         <div class="container px-0">
-            <div class="logo-box fluid" style=" height: 90px; width: 90px;">
+            <div class="logo-box fluid" style=" height: 120px; width: 120px;">
                 <a href="{% url 'pages:index' %}" aria-label="logo image">
-                    <img src="{% static 'frontend/assets/images/Rutuvia_Favicon.png' %}" width="153" alt=""></a>
+                <img src="{% static 'frontend/assets/images/logo-rutuvia.png' %}?v=1" width="40" height="40" alt="Logo">
+                </a>
                 <span class="fa fa-bars mobile-nav__toggler"></span>
             </div>
             <ul class="main-menu__list">
@@ -47,8 +48,7 @@
                     <!-- <i class="fab fa-user"></i> -->
                     <span class="main-header__create_account">
                     <span class="main-header__create_account_text">
-                        <div class="d-inline-block rounded p-3 text-center" 
-                        style="">
+                        <div class="d-inline-block rounded p-3 text-center">
                         <a href="{% url 'account:create_user' %}"
                         class="btn btn-outline-success fw-bolder fs-3 custom-hover">
                         CREATE ACCOUNT
