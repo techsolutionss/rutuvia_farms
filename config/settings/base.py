@@ -42,7 +42,6 @@ DJANGO_APPS = [
 ]
 THIRD_PARTY_APPS = []
 
-# List of local apps
 LOCAL_APPS = [
     "rutuvia_apps.pages.apps.PagesConfig",
     "rutuvia_apps.account.apps.AccountConfig",
